@@ -1,0 +1,774 @@
+[
+  {
+    "name": "Ahmad Sufril Azlan Mohamed, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/164-ahmad-sufril-azlan-mohamed-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "image processing"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Aman Jantan, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/166-aman-jantan-associate-professor-dr",
+    "currentResearchCluster": "Enabling Technologies And Infrastructures",
+    "suggestedTags": [
+      "SE",
+      "IC",
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "SE",
+        "matchedKeywords": [
+          "software engineering",
+          "software testing"
+        ]
+      },
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence",
+          "machine learning",
+          "deep learning"
+        ]
+      },
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "network",
+          "cybersecurity",
+          "security",
+          "forensic"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Anusha Achuthan, Ts. Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/490-anusha-achuthan-ts-dr",
+    "currentResearchCluster": "Data to Knowledge",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence",
+          "machine learning",
+          "deep learning",
+          "computational intelligence",
+          "computer vision",
+          "image processing"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Azizul Rahman Mohd Shariff, Dr",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/167-azizul-rahman-mohd-shariff-dr",
+    "currentResearchCluster": "Enabling Technologies And Infrastructures",
+    "suggestedTags": [
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "network"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Azleena Mohd Kassim, Dr",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/169-azleena-mohd-kassin-ms",
+    "currentResearchCluster": null,
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence",
+          "evolutionary computing"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "AZMAN AB MALIK, DR",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/769-azman-ab-malik-dr",
+    "currentResearchCluster": "****",
+    "suggestedTags": [],
+    "matchDetails": [],
+    "needsManualReview": true
+  },
+  {
+    "name": "Chan Huah Yong, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/172-chan-huah-yong-associate-professor-dr",
+    "currentResearchCluster": "Enabling Technologies And Infrastructures",
+    "suggestedTags": [
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "cloud computing"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Cheah Yu-N, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/173-cheah-yu-n-associate-professor-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "knowledge engineering"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Chew XinYing, Associate Professor Ts. Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/174-chew-xin-ying-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence",
+          "machine learning",
+          "deep learning",
+          "natural language"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Chong Yung Wey, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/803-chong-yung-wey-dr",
+    "currentResearchCluster": "- Enabling Technologies And Infrastructures\n\n\n\n\n\n \nSpecialization\nCyber physical system, cloud computing, artificial intelligence, cyber security \n\n\n\nQualifications\n- PhD, Universiti Sains Malaysia, Malaysia- MSc, Universiti Sains Malaysia, Malaysia- Bachelor of Engineering, University of Malaya, Malaysia\nSELECTED Projects\n- PEP-star: A Performance Enhancing Proxy for Low Earth Orbit Satellite Communications in Disaster-Resilient ASEAN Network Infrastructure (International)\n- FarmTab: Precision Agriculture System using Internet of Things and Artificial Intelligence for Urban Farming (International)\n- Develop capacity and capability to monitor coastal marine environments for sustainable development in Penang Island (International)\n- AISC: Artificial intelligence research development and innovation network for sustainable cities (International)\n- An IoT-based data collection and analytics framework using Bluetooth proximity beacons (International)\n- Artificial intelligence of things system to classify and predict the quality of produce in smart agriculture (International)\n- DDoS attack detection framework using machine learning in software defined network (International)\n- Science, Technology and Sustainable Cities Innovation Network in Southeast Asia (STSCIN) (International)\n- Research and Collaboration to Optimize Network Usage in Mobile Devices (National)\n- A human-in-the-loop reinforcement learning algorithm for predicting the blood glucose level in diabetes management (National) \nSELECTED JOURNAL Publication\n2025\n• Kok-Lim Alvin Yau, Yung-Wey Chong, Xiumei Fan, Faranak Nejati, Mohammad Kazem Chamran, Shalini Darmaraju, “Combination of generative adversarial network and reinforcement learning: A survey,” Neurocomputing, vol. 650, 2025. (Impact Factor: 6.5)\n• Wenhao Li, Selvakumar Manickam, Yung-Wey Chong, “FedPhishLLM: A privacy-preserving and explainable phishing detection mechanism using federated learning and LLMs,” Journal of King Saud University Computer and Information Sciences, vol. 37(252), 2025. (Impact Factor: 6.1)\n• Wenhao Li, Selvakumar Manickam, Yung-Wey Chong, Yongqing He, Ho Yean Li, Binyong Li, “ByteBait USB: a robust simulation toolkit for badUSB phishing campaign,” Journal of King Saud University Computer and Information Sciences, vol. 37(91), 2025. (Impact Factor: 6.1)\n• Phei-Ching Lim, Yung-Wey Chong, Qiu-Ting Chie, Hadzliana Zainal, Kok-Lim Alvin Yau, Soo-Huat Teoh, “Healthcare professionals’ perspectives on artificial intelligence (AI)-based mobile applications (apps) for diabetes education and behavioural management,” Digital Health, vol. 11, 2025. (Impact Factor: 3.3)\n• Wenhao Li, Shams Ul Arfeen Laghari, Selvakumar Manickam, Yung-Wey Chong, “Exploration and Evaluation of Humancentric Cloaking Techniques in Phishing Websites,” KSII Transactions on Internet and Information Systems, vol. 19 (1), 2025. (Impact Factor: 1.2)\n2024\n• Wenhao Li, Shams Ul Arfeen Laghari, Selvakumar Manickam, Yung-Wey Chong, Binyong Li, “Machine Learning-Enabled Attacks on Anti-Phishing Blacklists,” IEEE Access, vol. 12, pp. 191586-191602, 2024 (Impact Factor: 3.4)\n• Wenhao Li, Selvakumar Manickam, Yung-Wey Chong, Weilan Leng, Priyadarsi Nanda, “A State-of-the-art Review on Phishing Website Detection Techniques,” IEEE Access, vol. 12, pp. 187976-188012, 2024 (Impact Factor: 3.4)\n• Kok-Lim Alvin Yau, Yasir Saleem, Yung-Wey Chong, Xiumei Fan, Jer Min Eyu, David Chieng, “The Augmented Intelligence Perspective on Human-in-the-loop Reinforcement Learning: Review, Concept Designs, and Future Directions,” IEEE Transactions on Human-Machine Systems, vol 54 (6), pp. 762-777, 2024 (Impact Factor: 3.5)\n• Kok-Lim Alvin Yau, Yung-Wey Chong, “Reinforcement Learning in Sentiment Analysis: A Review and Future Directions,” Artificial Intelligence Review, 58(1), 6, 2024 (Impact Factor: 10.7)\n• Yung-Wey Chong, Kok-Lim Alvin Yau, Noor Farizah Ibrahim, Sharul Kamal Bin Abdul Rahim, Sye Loong Keoh, Achmad Basuki, “Federated Learning for Intelligent Transportation System (ITS): Use Cases, Open Challenges and Opportunities,” IEEE Intelligent Transport Systems Magazine, 2024 (Impact Factor: 4.3)\n2023\n• Eugene Tan Boon Hong, Yung-Wey Chong, Tat-Chee Wan, Kok-Lim Alvin Yau, “Relevant Visual Semantic Context-Aware Attention-Based Dialog”, Computers, Materials & Continua, vol. 76, no. 2, 2023 (Impact Factor: 2.0)\n• Yung-Wey Chong, Widad Ismail, Kok-Lim Alvin Yau, “eMeD: An Experimental Study of an Autonomous Wearable System with Hybrid Energy Harvester for Internet of Medical Things”, Journal of Sensors, 2023 (Impact Factor: 1.9)\n• Wenhao Li, Selvakumar Manickam, Sham Ul Arfeen Laghari, Yung-Wey Chong, “Uncovering the Clock: A Systematic Review of Techniques Used to Conceal Phishing Websites”, IEEE Access, vol. 11, 2023 (Impact Factor: 3.9)\n• Kok-Lim Alvin Yau, Yung-Wey Chong, Xiumei Fan, Celimuge Wu, Yasir Saleem, Phei-Ching Lim, “Reinforcement Learning Models and Algorithms for Diabetes Management”, IEEE Access, 2023 (Impact Factor: 3.476).\n• Tariq Emad Ali, Yung-Wey Chong, Selvakumar Manickam, “Machine Learning Techniques to Detect a DDoS Attack in SDN: A Systematic Review”, Applied Sciences, vol. 13(5), 2023 (Impact Factor: 2.838).\n• Tariq Emad Ali, Yung-Wey Chong, Selvakumar Manickam, “Comparison of ML/DL Approaches for Detecting DDoS Attacks in SDN”, Applied Sciences, vol. 13(5), 2023 (Impact Factor: 2.838).\n• Faizan Rasheed, Yasir Saleem, Kok-Lim Alvin Yau, Yung-Wey Chong, Sye Loong Keoh, “The Role of Deep Learning in Parking Space Identification and Prediction Systems,” Computers, Materials & Continua, vol. 75 (1), 2023. (Impact Factor: 3.860)\n2022\n• Mohammad Kazem Chamran, Kok-Lim Alvin Yau, Mee Hong Ling, Yung-Wey Chong, “A Hybrid Route Selection Scheme for 5G Network Scenarios: An experimental approach,” Sensor, vol. 22(16), 2022 (Impact Factor: 3.847).\n• Yung-Wey Chong, Kris Villanueva-Libunao, Su-Yin Chee, Mary Jane Alvarez, Kok-Lim Alvin Yau, Sye Loong Keoh, “Artificial Intelligence Policies to Enhance Urban Mobility in Southeast Asia”, Frontiers in Sustainable Cities, vol. 4, Frontiers, 2022. (Impact Factor: 0.36).\n• Muhammad Fahad Khan, Kok-Lim Alvin Yau, Mee Hong Ling, Muhammad Ali Imran, Yung-Wey Chong, “An Intelligent Cluster-based Routing Scheme in 5G Flying Ad-hoc Networks”, Applied Sciences, vol. 12(7), 2022. (Impact factor: 2.679)\n• Eugene Tan, Yung-Wey Chong, Mohammed F.R. Anbar, “Flow Management Mechanism in Software-Defined Network”, Computers, Materials & Continua, vol. 70(1), pp. 1437-1459, 2022. (Impact Factor: 3.772)\n2021\n• Faizan Rasheed, Kok-Lim Alvin Yau, Rafidah Md Noor, Yung-Wey Chong, “Deep Reinforcement Learning for Addressing Disruptions in Traffic Light Control”, Computers, Materials & Continua, vol. 71 (2), 2021. (Impact Factor: 3.772)\n• Kok-Lim Alvin Yau, Norizan Mat Saad, Yung-Wey Chong, “Artificial Intelligence Marketing (AIM) for Enhancing Customer Relationships”, Applied Sciences, vol. 11 (8), 2021. (Impact Factor: 2.679)\n• Kok-Lim Alvin Yau, Heejeong Jasmine Lee, Yung-Wey Chong, Mee Hong Ling, Aqeel Raza Syd, Celimuge Wu, “Augmented Intelligence: Surveys of Literature and Expert Opinion to Understand Relations Between Human Intelligence and Artificial Intelligence”, IEEE Access, vol. 9, pp. 136744-136761, 2021. (Impact Factor: 3.367)\n• Yung-Wey Chong, Abdikarim Mohamed Ibrahim, Kok-Lim Alvin Yau, Celimuge Wu, “Applications of Multi-Agent Deep Reinforcement Learning: Models and Algorithms”, Applied Sciences, vol. 11 (22), 2021. (Impact Factor: 2.679)\n• Mohammad A. Aladaileh, Mohammed Anbar, Iznan H. Hasbullah, Yousef K. Sanjalawe, Yung-Wey Chong, “Entropy-Based Approach to Detect DDoS Attacks on Software Defined Networking Controller”, Computers, Materials & Continua, vol. 69, 2021. (Impact Factor: 3.772)\n2020\n• Mohammad A. Aladaileh, Mohammed Anbar, Iznan H. Hasbullah, Yung-Wey Chong, Yousef K. Sanjalawe, “Detection Techniques of Distributed Denial of Service Attacks on Software-Defined Networking Controller – A Review”, IEEE Access, vol. 8, pp. 143985-143995, 2020. (Impact Factor: 3.745)\n• Mun-Kit Ng, Yung-Wey Chong, Kwang-man Ko, Young-Hoon Park, Yu-Beng Leau, “Adaptive path finding algorithm in dynamic environment for warehouse robot”, Neural Computing and Applications, vol. 32, pp. 13155-13171, 2020. (Impact Factor: 4.664)\n• Khong-Lim Yap, Yung-Wey Chong, Weixia Liu, “Enhanced handover mechanism using mobility prediction in wireless networks”, PLOS One, Vol. 15, pp. 1-31, 2020. (Impact Factor 2.74)\n2019\n• Yung-Wey Chong, Widad Ismail, Kwangman Ko, Chen-Yi Lee, “Energy Harvesting For Wearable Devices: A Review”, IEEE Sensors Journal, Vol. 19, No. 20, 2019. (Impact Factor 3.076)\n• Haider Dhia Zubaydi, Yung-Wey Chong, Kwangman Ko, Sabri M. Hanshi, Shankar Karuppayah “A Review on the Role of Blockchain Technology in Healthcare Domain”, Electronics, Vol. 8, No. 6, 2019. (Impact Factor: 2.110)\n• Ahmed K. Al-Ani, Mohammed Anbar, Selvakumar Manickam, Yung-Wey Chong, Yu-Beng Leau, Ayman Al-Ani, “Detection on Defense Mechanisms on Duplicate Address Detection Process in IPv6 Link-local Network: A Survey on Limitations and Requirements”, Arabian Journal for Science and Engineering, Vol. 44, No. 4, pp. 3745-3763, 2019. (Impact Factor: 1.092)\n2018\n• Khong-Lim Yap, Yung-Wey Chong, Kwangman Ko, “Performance Comparison between Progressive Mobility Prediction using Hidden Markov Model and Multipath Transmission Control Protocol”, Journal of Intelligent & Fuzzy Systems, pp. 1-10, 2018. (Impact Factor: 1.426)\n• Khong-Lim Yap and Yung-Wey Chong, “Software-Defined Networking Techniques to Improve Mobile Network Connectivity: Technical Review”, IETE Technical Review, Vol. 35, No. 3, 2018. (Impact Factor: 1.304)\nPROFESSIONAL CERTIFICATE\n- Certified Internet of Things Specialist (CIoTS)\n- AWS Cloud Practitioner (Accredited Instructor)\n- AWS Solution Architect (Associate-level) (Accredited Instructor)\n- Huawei’s HCIA-Routing & Switching (Accredited Instructor)\n- Cisco’s CCNA-Routing & Switching (Accredited Instructor)\n- Huawei’s HCIA-AI (Accredited Instructor)\nConsultancy\n- Consultancy service in transport engineering of CO2 emission for commercial vehicles             \n        \n        \n        \n        \n                \n\n            \n            \n                            Hits: 5412\n            \n        \n        \n        \n        \n        \n    \n\n\n\n                \n                        \n                \n                \n            \n\n            \n\n                        \n                #footer\\#0 ul{list-style: none; margin-left:-30px; font-size:12px;}\n\n            \n        \n        \n        \n            \n                                                \n                    \n\n    \n        \n            \n            \n            \n                \n                    School of Computer Sciences, Universiti Sains Malaysia, 11800 USM Penang, MalaysiaTel: +604-653 3647 / 2158 / 2155  |  Fax: +604-653 3684  | Email: This email address is being protected from spambots. You need JavaScript enabled to view it.  |  \n\n    \n    \n    \n        Last Modified: Monday 20 July 2026.",
+    "suggestedTags": [
+      "IC",
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence"
+        ]
+      },
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "cyber security",
+          "security",
+          "cloud computing"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Fadratul Hafinaz Hassan, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/175-fadratul-hafinaz-hassan-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence",
+          "machine learning"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Gan Keng Hoon, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/178-gan-keng-hoon-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [],
+    "matchDetails": [],
+    "needsManualReview": true
+  },
+  {
+    "name": "HAZRINA BINTI YUSOF HAMDANI, Dr",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/810-hazrina-binti-yusof-hamdani-dr",
+    "currentResearchCluster": "-",
+    "suggestedTags": [],
+    "matchDetails": [],
+    "needsManualReview": true
+  },
+  {
+    "name": "Jasy Liew Suet Yan, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/181-jasy-liew-suet-yan-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence",
+          "machine learning",
+          "natural language"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Lim Chia Yean, Ts. Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/700-lim-chia-yean-dr",
+    "currentResearchCluster": "Service Computing",
+    "suggestedTags": [
+      "SE"
+    ],
+    "matchDetails": [
+      {
+        "tag": "SE",
+        "matchedKeywords": [
+          "software engineering",
+          "software quality"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Manmeet Kaur Mahinderjit Singh, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/182-manmeet-kaur-mahinderjit-singh-dr",
+    "currentResearchCluster": "Enabling Technologies And Infrastructures",
+    "suggestedTags": [
+      "IC",
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence",
+          "machine learning",
+          "deep learning",
+          "data mining"
+        ]
+      },
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "network",
+          "cybersecurity",
+          "cyber security",
+          "security",
+          "cloud computing",
+          "distributed systems",
+          "internet of things",
+          " iot",
+          "blockchain",
+          "cryptography",
+          "forensic"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Mohammad Ali Sarvghadi, Ts. Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/784-mohammad-ali-sarvghadi",
+    "currentResearchCluster": "Enabling Technologies & Infrastructures",
+    "suggestedTags": [
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "network",
+          "internet of things"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Mohd Adib Haji Omar, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/186-mohd-adib-haji-omar-dr",
+    "currentResearchCluster": "Enabling Technologies And Infrastructures\n\n\nSpecialization\nNetwork Computing, Distributed Computing, Information Security \n\n\n\nQualifications\nBSc. American University, Washington DC, USAMSc. American University, Washington DC, USAPhD. Universiti Sains Malaysia, Malaysia\n \nInterests\nNetwork Computing\nDistributed Computing\nInformation Security\nTRIZ in Computing\nComputational Thinking\n \nProjects\nA Case Study : Using TRIZ Problem Solving Teaching and Students in Computer Science to Enhance Systematic Innovation.\n \nPublications\n2020\nAlmazrooie, M., Samsudin, A., Gutub, A.A.-A., Salleh, M.S., Omar, M.A., Hassan, S.A. Integrity verification for digital Holy Quran verses using cryptographic hash function and compression (2020) Journal of King Saud University - Computer and Information Sciences, 32 (1), pp. 24-34. DOI: 10.1016/j.jksuci.2018.02.006\n2019\nAhmed Elsmany, E.F., Omar, M.A., Wan, T.-C., Altahir, A.A. EESRA: Energy efficient scalable routing algorithm for wireless sensor networks (2019) IEEE Access, 7, pp. 96974-96983. DOI: 10.1109/ACCESS.2019.2929578\n2018\nAhmed, E.F., Omar, M.A., Wan, T.-C., Altahir, A.A. Work in Progress: LEACH-based energy efficient routing algorithm for large-scale wireless sensor networks (2018) Journal of Telecommunication, Electronic and Computer Engineering, 10 (5-Jan), pp. 83-87. DOI:\n2016\nBee, K.B., Hao, P.S., Woei, L.J., Omar, M.A. Intel Galileo based home automation system in Malaysia (2016) Jurnal Teknologi, 78 (1), pp. 113-120. DOI: 10.11113/jt.v78.4477\n2015\nSedek, K.A., Omar, M.A., Sulaiman, S. Towards effectiveness of integration and interoperability of one-stop E-government portal (2015) Jurnal Teknologi, 77 (9), pp. 47-60. DOI: 10.11113/jt.v77.6185\n2014\nSedek, K.A., Omar, M.A., Sulaiman, S. A hybrid and distributed architecture for an interoperable One-Stop E-government portal (2014) 2013 3rd World Congress on Information and Communication Technologies, WICT 2013, , pp. 325-330. DOI: 10.1109/WICT.2013.7113156\nSedek, K.A., Omar, M.A., Sulaiman, S. A hybrid architecture for one-stop e-government portal integration and interoperability (2014) 2014 8th Malaysian Software Engineering Conference, MySEC 2014, , pp. 96-101. DOI: 10.1109/MySec.2014.6985996\nAnagreh, M., Samsudin, A., Omar, M.A. Parallel method for computing elliptic curve scalar multiplication based on MOF (2014) International Arab Journal of Information Technology, 11 (6), pp. -. DOI:\nAl-Tamimi, B.N., Budiarto, R., Omar, M.A., Alhendawi, K.M. Exploiting IPV6 routing headers type 0/2 in different IP wireless networks: Attack scenario & analysis (2014) Journal of Theoretical and Applied Information Technology, 59 (2), pp. 372-378. DOI:\n2013\nJaafar, Y., Samsudin, A., Syafalni, A., Omar, M.A. Framework for VoIP authentication using session ID based on modified vector quantization (2013) International Journal of Multimedia and Ubiquitous Engineering, 8 (3), pp. 369-376. DOI:\n2012\nSyafalni, A., Samsudin, A., Jaafar, Y., Omar, M.A. ROSS: Low-cost self-securing VoIP communication framework (2012) KSII Transactions on Internet and Information Systems, 6 (12), pp. 3366-3383. DOI:\nSedek, K.A., Omar, M.A., Sulaiman, S. Interoperable SOA-based architecture for e-government portal (2012) 2012 IEEE Conference on Open Systems, ICOS 2012, , pp. -. DOI: 10.1109/ICOS.2012.6417636\nAmirul, M., Omar, M.A., Aini, N., Karuppiah, E.K., Mohanavelu, M., Meng, S.S., Chong, P.K. Sorting very large text data in multi GPUs (2012) Proceedings - 2012 IEEE International Conference on Control System, Computing and Engineering, ICCSCE 2012, , pp. 160-165. DOI: 10.1109/ICCSCE.2012.6487134\n2011\nSedek, K.A., Sulaiman, S., Omar, M.A. A systematic literature review of interoperable architecture for e-government portals (2011) 2011 5th Malaysian Conference in Software Engineering, MySEC 2011, , pp. 82-87. DOI: 10.1109/MySEC.2011.6140648\nZareei, M., Zarei, A., Budiarto, R., Omar, M.A. A comparative study of short range wireless sensor network on high density networks (2011) 17th Asia-Pacific Conference on Communications, APCC 2011, , pp. 247-252. DOI: 10.1109/APCC.2011.6152813\n2009\nOmar, M.A., Abdullah, R., Haron, F. Flexible security protocol in collaborative editing environment: An overview (2009) ICCTD 2009 - 2009 International Conference on Computer Technology and Development, 1, pp. 252-254. DOI: 10.1109/ICCTD.2009.183\n2004\nOmar, M.A., Haron, F., Abdullah, R. Adaptive data consistency management in collaborative editing environment (2004) Proceedings - 2004 International Conference on Information and Communication Technologies: From Theory to Applications, ICTTA 2004, , pp. 579-580. DOI:\nSupervision\n[Fill your graduates supervisions]\nTeaching\n[Fill your teaching subjects]\nRecognition & Leadership\n[Fill your recognitions, e.g. examiners, editorial boards etc.]\nConsultancy\n[Fill your consultation works]             \n        \n        \n        \n        \n                \n\n            \n            \n                            Hits: 8596\n            \n        \n        \n        \n        \n        \n    \n\n\n\n                \n                        \n                \n                \n            \n\n            \n\n                        \n                #footer\\#0 ul{list-style: none; margin-left:-30px; font-size:12px;}\n\n            \n        \n        \n        \n            \n                                                \n                    \n\n    \n        \n            \n            \n            \n                \n                    School of Computer Sciences, Universiti Sains Malaysia, 11800 USM Penang, MalaysiaTel: +604-653 3647 / 2158 / 2155  |  Fax: +604-653 3684  | Email: This email address is being protected from spambots. You need JavaScript enabled to view it.  |  \n\n    \n    \n    \n        Last Modified: Monday 20 July 2026.",
+    "suggestedTags": [
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "network",
+          "security"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Mohd Azam Osman, Associate Professor",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/185-mohd-azam-osman-mr",
+    "currentResearchCluster": "Enabling Technologies And Infrastructures",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "image processing"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Mohd Halim Mohd Noor, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/262-mohd-halim-mohd-noor-dr",
+    "currentResearchCluster": "Data To Knowledge\n\n\n\nQualifications\nPhD in Computer Systems Engineering (Univ. of Auckland, New Zealand)MSc in Electrical and Electronic Engineering (USM)BEng in Computer and Information Engineering (UIAM)",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence",
+          "machine learning",
+          "deep learning",
+          "computer vision"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Mohd Heikal Husin, Ts. Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/187-mohd-heikal-husin-dr",
+    "currentResearchCluster": "Service Computing\n\n\nCURRENT",
+    "suggestedTags": [
+      "SE"
+    ],
+    "matchDetails": [
+      {
+        "tag": "SE",
+        "matchedKeywords": [
+          "software testing"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Mohd Nadhir Ab Wahab, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/263-mohd-nadhir-ab-wahab-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence",
+          "machine learning",
+          "deep learning",
+          "computational intelligence",
+          "computer vision"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Mohd Najwadi Yusoff, Ts. Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/188-mohd-najwadi-yusoff-dr",
+    "currentResearchCluster": "Enabling Technologies And Infrastructures Computing (ETIC)\n\n\nSPECIALIZATION\nCybersecurity, Cyber Threat Intelligence, Digital Forensics and Incident Response (DFIR), Cryptography and Post-Quantum Cryptography (PQC), AI for Cybersecurity, Blockchain and Decentralized Security, Cybercrime and Privacy Engineering, Secure Protocols and Distributed Systems Security, Critical Information Infrastructure Protection (CII)\n\n\n\nQualifications\n\nBachelor of Technology (Hons.) in Information Technology, Universiti Teknologi PETRONAS\nMaster of Science, Computer Science, Universiti Sains Malaysia\nPh. D, Security in Computing, Universiti Putra Malaysia\n\nRESEARCH INTEREST\n\nCyber Threat Intelligence and Adversarial OperationsFocus on Cyber Threat Intelligence (CTI), threat hunting, and Advanced Persistent Threat (APT) campaign analysis, including research on the dark web and cybercrime ecosystems.\nMalware, Exploitation and DeceptionWork in malware analysis and reverse engineering, vulnerability research and exploit development, as well as deception technologies and honeypot systems.\nAI for CybersecurityResearch on AI-driven threat detection, adversarial machine learning, and the security of AI systems, including the analysis of attacks against machine learning models and the development of robust and trustworthy AI for security applications.\nDigital Forensics and Incident ResponseCovering host, network and memory forensics, malware and fileless attack investigations, and cloud or container forensics, along with incident investigation, forensic automation, and anti-forensics techniques.\nSystems and Infrastructure SecurityIncluding cloud-native and container security, blockchain and cryptocurrency security, and protection of Critical Information Infrastructure (CII).\nCryptography, Privacy and Secure SystemsFocusing on privacy engineering, secure protocols, and cryptography, including post-quantum cryptography (PQC).\n\nProjects / Grants\n\nDDoS Attack Detection Framework using Machine Learning in Software Defined Network (International Grant - Project Leader)\nA Framework for Detecting Fileless Cryptocurrency Mining Malware in Blockchain Technology (National Grant FRGS - Project Leader)\nA Multi-actor Energy Distribution Model Based on Blockchain for Nationwide Solar Power Adoption (Internal Grant RUTeam - Project Leader)\nForensically Sound Approach for Inter-Platform Mobile Operating System (Internal Grant USM-STG - Project Leader)\nResearch Into Security Layer and Communication For I-Connect Industry 4.0 in Manufacturing Modular Model Industry 4.0 Digital Twin Factory with Intelligence System on Systems and IoT Connectivity for Industry 4.0 (International Grant - Co-Project Leader)\nAn IoT-Based Transport Data Collection And Analytics Framework using Bluetooth Proximity Beacons (International Grant - Co-Project Leader)\nA Big Data Analytics Platform for Optimizing Oil Palm Yield via Breeding by Design: Blockchain for Data Analytics (National Grant LRGS - Co-Project Leader)\nProposing Awqaf Alternative Project (AAP) Software Application: Sustainable and Future Direction of Malaysia Higher Education (National Grant FRGS - Co-Project Leader)\nModel Infak Bersepadu (MIB) Antara Masjid Dan Kelompok Asnaf Terpilih (National Grant FRGS - Co-Project Leader)\nAsia LAN Security and Monitoring (Collaboration with The University of Tokyo)\nIPT Malaysia Blockchain Network Testnet (Collaboration with iExploTech)\n\nPublications\n\nScopus \nExpert USM\nGoogle Scholar\n\nSupervision (PhD and master research)\nPhD\n\nLi Hui\nApuru Jonathan Iliya\nMohaniswary Chandara Kumaran\nAl Shammari Abeer Obaid Kadhim\nRana Sohaib\nAl Shammari Asma Khalaf\nObeidat Jasour Ahmed Mahmoud\nQusai Mohammad Ahmad Bani Issa\n\nMaster\n\nNurul Syamim Nadhrah Mohd Nazri\nAmirul Hakimi Zaini\nSuhaib Muhammad\nMemon Abdul Moiz\n\nSubmitted the Thesis (Waiting for Viva)\n\nTeng Wei Jian\nDai Xiangqin\n\nPassed the Viva (Doing correction)\n\nAlmutairi Omar Mutheeb\nWilfridus Bambang Triadi\n\nGraduated \n\nDr. Zahian Binti Ismail - Approach to Detect Botnet Over an Encrypted Channel Using Network Flow Feature\nDr. Arif Mahmud - Factors Influencing the Adoption of Internet of Things for Home Security in Dhaka Households\nDr. AbuBakar Abba - Analysable Chaos-Based Design Paradigms for Cryptographic Applications\nDr. Shams Mhmood Abd Ali - An Optimized Resource-Efficient Redaction Mechanism with Integrity Validation Support for Redactable Blockchain\nDr. Alasfour Tareq Imad - Enhanced Feature Selection with Stacking Method for DDoS Attack Detection in Software Defined Networking Environment\nDr. Hasan Falah Hasan - Conditional and Anonymous Payment Protocol with Local Dispute Resolution Mechanism in Payment Channel Networks\nDr. Mohamed Fadul Iedres Fadul - DeepGen: A Data-Driven Differential Cryptanalysis Framework for Lightweight Generalised Feistel Ciphers based on Machine Learning and Metaheuristics\nDr. Abdullahi Aminu Kazaure - An Efficient and Scalable Digital Forensic Approach For Deep Learning Based Offensive Language Identification on Social Media\nMs. Chan Yen Yee (Master) - Probabilistic Boomerang Switches for ARX Ciphers\n\nTeaching\n\nCST232 - Operating System (2017-2022)\nCST233 - Information Security and Assurance (2018)\nCST235 - Principles of Computer Networks and Information Security (2021)\nCST339 - Information Security Management and Assurance (2021-2027)\nCST436 - Digital Forensics and Investigation (2023-present)\nCDS523 - Forensic Analytics And Digital Investigations (2018-2024)\nHCIA-R&S - Huawei Certified ICT Associate (2017-2021)\nHCIA-Datacom - Huawei Certified ICT Associate (2020-present)\nHCIA-Security - Huawei Certified ICT Associate (2022-present)\nAPIE Camp - Cybersecurity and Networking Modules (2023-present)\nCPIAM - Cyber Integrity and Digital Security (2023-Present)\n\nRecognition & Leadership\n\nProfessional Technologists, Malaysia Board of Technologists (MBOT)\nLifetime Member, Cyber Security Academia Malaysia (CSAM)\nExcellent Service Awards, Universiti Sains Malaysia 2019, 2022\nHuawei Excellent Tutor 2018, 2019, 2020, 2022\n\nConsultancy\n\nBoard Member, Cybersecurity Research Centre (CYRES), Universiti Sains Malaysia\nBoard Member, Centre for Co-curricular Programme, Universiti Sains Malaysia\nHead, USM-CyberSecurity Malaysia (CSM) Collaboration\nHead, USM-Huawei ICT Academy\nHead, USM-Fortinet Academic Partner\nCommittee, Malaysian Cyber Security Community Organization (MCCO)\nMember, Policy Development and Procedures for Digital Data Sanitation, CyberSecurity Malaysia (CSM)\nMember, National Blockchain Technology Roadmap, Ministry of Science, Technology and Innovation (MOSTI)\nExpert Review Panel, Ministry of Science, Technology and Innovation (MOSTI)\nAcreditation Panel, Malaysia Qualification Agency (MQA)\nTVET Acreditation Panel, Malaysia Qualification Agency (MQA)\nAcreditation Panel, Technology and Technical Accreditation Council (TTAC), MBOT\nPartner, SysArmy Threat Research and Intelligence Alliance Exchange (SATRIA-X)\n             \n        \n        \n        \n        \n                \n\n            \n            \n                            Hits: 14362\n            \n        \n        \n        \n        \n        \n    \n\n\n\n                \n                        \n                \n                \n            \n\n            \n\n                        \n                #footer\\#0 ul{list-style: none; margin-left:-30px; font-size:12px;}\n\n            \n        \n        \n        \n            \n                                                \n                    \n\n    \n        \n            \n            \n            \n                \n                    School of Computer Sciences, Universiti Sains Malaysia, 11800 USM Penang, MalaysiaTel: +604-653 3647 / 2158 / 2155  |  Fax: +604-653 3684  | Email: This email address is being protected from spambots. You need JavaScript enabled to view it.  |  \n\n    \n    \n    \n        Last Modified: Monday 20 July 2026.",
+    "suggestedTags": [],
+    "matchDetails": [],
+    "needsManualReview": true
+  },
+  {
+    "name": "Noor Farizah Ibrahim, Ts. Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/284-noor-farizah-ibrahim-dr",
+    "currentResearchCluster": "Service Computing",
+    "suggestedTags": [
+      "IC",
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "machine learning",
+          "natural language",
+          "nlp",
+          "data mining"
+        ]
+      },
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "network"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Nor Athiyah Abdullah, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/191-nor-athiyah-abdullah-dr",
+    "currentResearchCluster": "Service Computing",
+    "suggestedTags": [
+      "SE"
+    ],
+    "matchDetails": [
+      {
+        "tag": "SE",
+        "matchedKeywords": [
+          "requirements engineering"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Nur Hana Samsudin, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/193-nurhana-samsudin-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "natural language"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Nur Intan Raihana Ruhaiyem, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/194-nur-intan-raihana-ruhaiyem-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "computer vision",
+          "image processing"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Nursakirah Ab Rahman Muton, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/771-nursakirah-ab-rahman-muton-dr",
+    "currentResearchCluster": "Service Computing",
+    "suggestedTags": [
+      "SE"
+    ],
+    "matchDetails": [
+      {
+        "tag": "SE",
+        "matchedKeywords": [
+          "software engineering"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Nurul Hashimah Ahamed Hassain Malim, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/196-nurul-hashimah-ahamad-hassain-malim-dr",
+    "currentResearchCluster": "s\nData to Knowledge Cluster (PPSKOMP), Brain and Behavior Cluster (USM), Big Data Analytics Cluster (USM), System Biology Cluster (USM).",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "machine learning",
+          "deep learning",
+          "data mining"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Putra Sumari, Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/160-putrasumari",
+    "currentResearchCluster": "Service Computing",
+    "suggestedTags": [],
+    "matchDetails": [],
+    "needsManualReview": true
+  },
+  {
+    "name": "Ramona Ramli, Ts. Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/840-ts-dr-ramona-ramli",
+    "currentResearchCluster": "Computational Intelligence\n\n\n\n\n\n \nRESEARCH Specialization\nTrust Evaluation, Fuzzy Logic, Multi-Criteria Decision Making, Software Testing, Social Commerce\n\n\nRESEARCH Interest\n- Subjective Evaluation- Trust Computation- Software Testing\n\nQualifications\n- Bachelor of Computer Science, UPM (1999)- Master of Computer Science, UPM (2006)- PhD in Information and Communication Technology, UNITEN (2023)\nProjects\n\nFormulating a Trust Model to Enhance Customers Trust in Social Commerce using ANP-Fuzzy Logic Approach (FRGS 2015 -RM 78,800) Role: Project Leader – Completed\nFormulating a test case generation algorithm using biologically inspired system to optimize the efficiency and effectiveness of interaction testing for highly configurable event-based systems (FRGS 2014 – RM65,200). Role: Project Member - Completed\nFormulation of a lightweight trust evaluation algorithm using trust model for peer communications to improve information reliability in the disaster environment. (FRGS 2015-1 (Flood Disaster Management)- RM50,200) Role: Project Member – Completed\nPrivacy Preservation Technique for Smart Metering Data (TNB SEEB FUND 2017 – RM600,000) Role: Project Member – Completed\nIntelligent Deception Attack Algorithm System for TNB ICT (TNB SEEB FUND 2017 – RM450,000) Role: Project Member – Completed\nEfficient Cryptographic based Technique for Privacy Preservation in Industries Practicing Big Data (UNITEN Internal Grant 2017 – RM 20,00) Role: Project Member – Completed\nApplication of Gamification Approach in Motivating Participants in Fitness Camp (UNITEN Internal Grant 2018– RM 20,00) - Role: Project Leader – Completed\n A Fuzzy Logic Based Model to Evaluate the Trustworthiness of Instagram Sellers from Customer’s Perspective (UNITEN BOLD Research Grant 2019 – RM 20,00) - Role: Project Leader – Completed\nA Blockchain – Based Platform For Trading Of Smart Meter Data With User – Centric Privacy (TNB SEEB FUND 2019 – RM156,855) Role: Project Member – Completed\nA Forensic Investigation Framework For Cyber Attack On Smart Grid (TNB SEEB FUND 2019 – RM114,462) Role: Project Member – Completed\n Intelligent Data Selection Algorithm For Privacy Preservation (TNB SEEB FUND 2019 – RM135,290) Role: Project Member – Completed\nEnhanced Security and Privacy through Building a Scalable Lightweight Blockchain Integrated Model (LightBlock) for IoT Applications (FRGS 2020 – RM65000) Role: Project Member – Completed\nAn Empirical Analysis on a Fuzzy Cybersecurity Risk Assessment Model for Higher Education Institutions (HEIS) (BOLD Research Grant 2021 – RM20,000) Role: Project Leader – Completed\nOptimization of the school transportation services via a location-based reminder approach (Yayasan Canselor Universiti (YCU) Research Grant 2022 - RM20000) Role: Project Leader – Completed\nCyber Resilience Metric: Integrating Cyber Hygiene Behaviour and Energy Infostructure Resilience Capabilities (TS Leo Maggie Distinguished Chair in Energy Informatics Chair 2022 – RM61,000) Role: Project Member – Ongoing\n\nPublications\n\nRamona binti Ramli; An Application Of Review Technique For Teaching Software Quality Subject; Uniten Teaching And Learning Symposium 2014; Ramona Ramli, An Application Of Review Technique For Teaching Software Quality Subject,UNITEN Teaching and Learning Symposium, 2014 ; 27 Aug 2014; Other; None\nRamona binti Ramli, ROSLAN ISMAIL, Assoc. Prof. Dr., ABDUL RAHIM AHMAD, Dr.; Evaluating And Selecting Software Testing Tools: A Case Study ; Postgraduate Research Workshop @ Softtec2014; ISBN 978-967-5770- 58-6; 09 Sep 2014; Conference Proceeding; None\nRamona binti Ramli, MOHD HAZLI BIN MOHAMED ZABIL, En., Lim Kok Cheng, Mr, YUNUS BIN YUSOFF, MOHAMMAD SHUKERI BIN YUSUFF; Interaction Testing For An Ad-Hoc System (Queue Management System); Arpn Journal Of Engineering And Applied Sciences ; ISSN 1819-6608 February 2015 | Vol. 10 No. 3 page 1161- 1168; 24 Feb 2015; Journal; SCOPUS\nRamona binti Ramli, ASMIDAR BTE ABU BAKAR; Review Of Literature On Trust Factors Affecting Customer's Purchase Intention On Soho Seller: S-Commerce Context; Information -An International Interdisciplinary Journal; Volume :19, Issue No : 7(B), Article ID :#1570222284, Page Start :2791, Page End :2796, ISSN :1343-4500; 01 Jul 2016; Journal; SCOPUS\nFiza Binti Abdul Rahim, ASMIDAR BTE ABU BAKAR, Salman Bin Yussof, ROSLAN ISMAIL, Assoc. Prof. Dr., Ramona binti Ramli; Privacy Preservation Framework For Advanced Metering Infrastructure; 6Th International Conference On Computing And Informatics (Icoci) 2017; Volume :-, Issue No :-, Article ID :128, Page Start :-, Page End :-, ISSN :-; 27 Apr 2017; Conference Proceeding; ISI\nRamona binti Ramli, ASMIDAR BTE ABU BAKAR, ROSLAN ISMAIL, Assoc. Prof. Dr.; The Trust Effect Towards Online Seller In SocialCommerce ; Proceedings Of The 6Th International Conference On Computing & Informatics; Volume :-, Issue No :-, Article ID :030, Page Start :317, Page End :322, ISSN :289-7402; 27 Apr 2017; Conference Proceeding; ISI\nFiza Binti Abdul Rahim, ASMIDAR BTE ABU BAKAR, Ramona binti Ramli; Developing An Information Privacy Concerns Model For Protecting Consumers’ Personal Data In Energy Sector; The 5Th International Conference On Internet Services Technology And Information Engineering 2017 (Istie 2017); Volume :-, Issue No :-, Article ID :147, Page Start :-, Page End :-, ISSN :-; 20 May 2017; Conference Proceeding; None\nASMIDAR BTE ABU BAKAR, Ramona binti Ramli, Fiza Binti Abdul Rahim; Efficient Cryptographic-Based Technique For Privacy Preservation In Industries Practising Big Data; International Conference On Internet Services Technology And Information Engineering 2017; Volume :-, Issue No :-, Article ID :148, Page Start :-, Page End :-, ISSN :-; 20 May 2017; Conference Proceeding; None\nRamona binti Ramli; An Application Of Ant Colony Optimization In Industrial Training Allocation; Journal Of Telecommunication, Electronic And Computer Engineering; Volume :9, Issue No :2-2, Article ID :2220-5988-1- SM, Page Start :61, Page End :64, ISSN :21801843; 23 Aug 2017; Journal; SCOPUS\nFiza Binti Abdul Rahim, ASMIDAR BTE ABU BAKAR, Ramona binti Ramli; Developing An Information Privacy Concerns Model For Protecting Consumers’ Personal Data In Energy Sector ; Advanced Science Letters; Volume:24, Issue No :1, Article ID :https://doi.org/10.1166/asl.2018.11798, Page Start :727, Page End :730, ISSN :1936-6612; 01 Jan 2018; Conference Proceeding; ISI\nASMIDAR BTE ABU BAKAR, Ramona binti Ramli, Fiza Binti Abdul Rahim; Efficient Cryptographic-Based Technique For Privacy Preservation In Industries Practising Big Data; Advanced Science Letters; Volume :24, Issue No :1, Article ID :https://doi.org/10.1166/asl.2018.11799, Page Start :731, Page End :734, ISSN :1936- 6612; 01 Jan 2018; Conference Proceeding; ISI\nRamona binti Ramli, YUNUS BIN YUSOFF; E-Iqra’: Mobile Application For Learning Al-Quran Using Voice Recognition; Advanced Science Letters ; Volume :24, Issue No :3, Article ID : https://doi.org/10.1166/asl.2018.11133, Page Start :1666, Page End :1669, ISSN :1936-6612 ; 01 Mar 2018; Conference Proceeding; ISI\nFiza Binti Abdul Rahim, ASMIDAR BTE ABU BAKAR, Salman Bin Yussof, Ramona binti Ramli, ROSLAN ISMAIL, Assoc. Prof. Dr.; Privacy Preserving Technique For Smart Metering Data: A Preliminary Result ; Advanced Science Letters; Volume :24, Issue No :3, Article ID :ttps://doi.org/10.1166/asl.2018.11172, Page Start :1839, Page End :1842, ISSN :1936-6612; 01 Mar 2018; Conference Proceeding; ISI\nRamona binti Ramli, ASMIDAR BTE ABU BAKAR, ROSLAN ISMAIL, Assoc. Prof. Dr., Mohd Zin Bin Mokhtar; Developing And Validating An Instrument To Measure The Trust Effect Towards Online Seller In Social Commerce; The Landscape Of Computing & Informatics Research 2016-2017; Level: National,Chapter Title : E- Commerce, E-Business, M-Commerce, Book Title : The Landscape of Computing & Informatics research 2016- 2017, Book Editor :Zulikha, Haryani, Mazni, Publisher :School of Computing, UUM Sintok, Year Publish :2018, ISBN :978-967-0910-49-9, No of Pages :76-91; 25 Apr 2018; Research Book Chapter; None\nASMIDAR BTE ABU BAKAR, ROSLAN ISMAIL, Assoc. Prof. Dr., Salman Bin Yussof, Fiza Binti Abdul Rahim, Ramona binti Ramli; Privacymask: A Privacy Preserving Application For Sensitive Data; 29Th International Invention, Innovation & Technology Exhibition (Itex'18); Type :Digital or Media Print,Source Name :PrivacyMask: A Privacy Preserving Application for Sensitive Data, Volume :-, Issue No :-, Article ID :-, Page Start :-, Page End : -, ISSN :-; 10 May 2018; Other; None\nRamona binti Ramli, ASMIDAR BTE ABU BAKAR; Prioritization Of Criteria In Evaluating Customer’s Trust On Online SNSs Sellers Using AHP; The 6Th 2018 International Conference On Advances Technology In Telecommunication, Broadcasting, And Satellite (The Telsatech 2018) ; ; 06 Oct 2018; Conference Proceeding; None\nRamona binti Ramli, ASMIDAR BTE ABU BAKAR; A Review On Trust Factors Affecting Purchase Intention On Instagram; IEEE Conference On Applications, Information And Network Security (AINS); ; 21 Nov 2018; Conference Proceeding;\nASMIDAR BTE ABU BAKAR, Fiza Binti Abdul Rahim, Ramona binti Ramli; A Comparative Study Of Data Anonymization Technique; 2019 Ieee 5Th Intl Conference On Big Data Security On Cloud (Bigdatasecurity), Ieee Intl Conference On High Performance And Smart Computing, (Hpsc) And Ieee Intl Conference On Intelligent Data And Security (Ids); ; 29 Aug 2019; Conference Proceeding; SCOPUS\nRamona binti Ramli, Zaihisma Binti Che Cob, ASMIDAR BTE ABU BAKAR; Performance Of Factors Influencing Customers’ Purchase Intention Towards Online Snss Sellers; International Journal Of Engineering And Advanced Technology (Ijeat); Volume :9, Issue No :1, Article ID : 10.35940/ijeat.A2654.109119, Page Start :3440, Page End:3443, ISSN : 2249 – 8958; 01 Oct 2019; Journal; SCOPUS\nRamona binti Ramli, ASMIDAR BTE ABU BAKAR; Developing And Validating Instrument To Measure The Trust Effect Towards Instagram Sellers; Iccee 2019; ; 01 Jan 2020; Conference Proceeding; SCOPUS\nRamona binti Ramli, ASMIDAR BTE ABU BAKAR; Developing And Validating An Instrument To Measure The Trust Effect Towards Instagram Sellers; Advances In Electronics EngineeringProceedings Of The Iccee 2019, Kuala Lumpur, Malaysia; Volume :619, Issue No :-, Article ID :https://doi.org/10.1007/978-981-15-1289-6_26, Page Start :-, Page 281 End :289-, ISSN :978-981-15-1288-9; 01 Jan 2020; Advances in Electronics Engineering- Springer ; SCOPUS\nRamona binti Ramli, ASMIDAR BTE ABU BAKAR; Evaluating Customer Trust Towards Online Snss Sellers UsingFuzzy Ahp; Journal Of Physics: Conference Series; Volume :1529, Issue No :5, Article ID :doi:10.1088/1742- 6596/1529/5/052016, Page Start :1, Page End :8, ISSN :1742-6596; 17 Jun 2020; Conference Proceeding; SCOPUS\nRamona binti Ramli; E-Commerce Beyond The Pandemic Coronavirus: Click And Collect Food Ordering; Iop Conf. Series: Materials Science And Engineering; Volume :864, Issue No :1, Article ID :10.1088/1757- 899X/864/1/012049, Page Start :1, Page End :7, ISSN :1757-899X; 09 Jul 2020; Conference Proceeding; SCOPUS\nRamona binti Ramli, Fiza Binti Abdul Rahim, ASMIDAR BTE ABU BAKAR; Exploration Study Of Skillsets Needed In CyberSecurity Field; 2020 8Th International Conference On Information TechnologyAnd Multimedia (Icimu); Volume :-, Issue No :-, Article ID :10.1109/ICIMU49871.2020.9243448, Page Start :-, Page End :-, ISSN :-; 01 Aug 2020; IEEE; SCOPUS\nFiza Binti Abdul Rahim, Zul-azri Bin Ibrahim, YUNUS BIN YUSOFF, Salman Bin Yussof, ASMIDAR BTE ABU BAKAR, ROSLAN ISMAIL, Ramona binti Ramli; Smart Grid Digital Forensics Investigation Framework; 2020 8Th International Conference On Information Technology And Multimedia (Icimu); Volume :-, Issue No :-, Article ID:10.1109/ICIMU49871.2020.9243536, Page Start :-, Page End :-, ISSN :-; 26 Aug 2020; IEEE; SCOPUS\nMOAMIN A MAHMOUD, Ramona binti Ramli, Raja Feninferina binti Raja Azman, Y.M.; A Development Methodology Framework Of Smart Manufacturing Systems (Industry 4.0); International Journal On Advanced Science, Engineering And Information Technology; Volume :10, Issue No :5, Article ID:10.18517/ijaseit.10.5.10183, Page Start :1927, Page End :1932, ISSN :2088-5334; 01 Nov 2020; Journal; SCOPUS\nASMIDAR BTE ABU BAKAR, ABDUL RAHIM AHMAD, Salman Bin Yussof, Fiza Binti Abdul Rahim, Ramona binti Ramli, ROSLAN ISMAIL; Privacy Preserving Features Selection For Data Mining Using Machine Learning Algorithms; 2020 8Th International Conference On Information Technology And Multimedia (Icimu); Volume :nl, Issue No :nl, Article ID :DOI: 10.1109/ICIMU49871.2020.9243355, Page Start :109, Page End :113, ISSN :ISBN: 978-1-7281-7310-8; 11 Nov 2020; IEEE; SCOPUS\nASMIDAR BTE ABU BAKAR, Salman Bin Yussof, Fiza Binti Abdul Rahim, Ramona binti Ramli; A Review On Software Deployment Environments ForPrivacy Protection In An Organizations; 2020 8Th International Conference On Information Technology And Multimedia (Icimu); Volume :nl, Issue No :nl, Article ID :DOI: 10.1109/ICIMU49871.2020, Page Start :415, Page End :419, ISSN :ISBN: 978-1-7281-7310-8; 11 Nov 2020; IEEE; SCOPUS\nRamona binti Ramli; A Software Engineering Approach In Netball Performance Analysis: Training And Activities Features For Automatic Players Position Selection; Icimu2020; ; 11 Nov 2020; IEEE; SCOPUS\nRamli, R., Bakar, A. A., Ismail, R., & Mohamad, A. H. (2021). Fuzzy-based trust model to evaluate customer trust towards online SNSs sellers. Turkish Journal of Computer and Mathematics Education, 12(3), 1930–1935.\nRamli, R., Ibrahim, M.Z.A, Bakar, A. A., & Mohamad, A. H. (2021). Selection of Trusted Organic Food Sellers on Instagram Using Fuzzy Analytic Hierarchy Process. Turkish Journal of Computer and Mathematics Education, 12(3), 1981–1986.\nRamli, R., Bakar, A. A., and Rahim, F. A. (2022). What Influences Customer ’ s Trust on Online Social Network Sites ( SNSs ) Sellers? International Journal of Advanced Computer Science and Applications (IJACSA), 13(2), 1– 9.\nASMIDAR BTE ABU BAKAR, Ramona binti Ramli, Md Nabil Bin Ahmad Zawawi; Cybersecurity Risk Assessment: Modeling Factors Associated With Higher Education Institutions; International Journal Of Advanced Computer Science And Applications (Ijacsa); Volume :13, Issue No :5, Article ID : 10.14569/issn.2156-5570, Page Start :1, Page End :6, ISSN : 2156-5570 ; 31 May 2022; Journal; SCOPUS\nMOAMIN A MAHMOUD, Ramona binti Ramli; A Systematic Review On The Energy Efficiency Of Dynamic Clus- Tering In A Heterogeneous Environment Of Wireless Sensor Networks (WSND) ; Electronics; Volume :11, Issue No :18, Article ID :https://doi.org/10.3390/electronics11182837, Page Start :1, Page End :20, ISSN :2079-9292; 08 Sep 2022; Journal; ISI\nMahmoud, M.A.; Gurunathan, M.; Ramli, R.; Babatunde, K.A.; Faisal, F.H. Review and Development of a Scalable Lightweight Blockchain Integrated Model (LightBlock) for IoT Applications. Electronics 2023, 12, 1025. https://doi.org/10.3390/electronics12041025\n\nTeaching\n- CPT316 Programming Language Implementation and Paradigms\n- CMT323/ CMM322 Information Systems Theory and Management\n- CMT426/CMM426 : Business Intelligence andBusiness Intelligence and Analytics\nSupervision\n -\n-\nCERTIFICATION, Recognition & Leadership\n \nPROFESSIONAL CERTIFICATE\n\nTechnologist Specialist – MBOT\nCertified Tested Advanced Level – CTAL (Test Manager) \nCertified Tester Foundation Level –CTFL (MSTB) \n\nMEMBERSHIP\n\nInternational Association of Computer Science and Information technology (IACST) \nInternational Association of Engineers (IAENG)\nMalaysian Software Engineering Interest Group (MySEIG)\n\n \nINNOVATION & COMPETITION\n\nTest Design Competition – SOFTEC2014, First Place winner\nTest Design Competition – SOFTEC 2016, Third place winner\nE-bug Hunt by Genting Group – Academic Recognition\nTest Design Competition – SOFTEC 2017, Second Place winner\nTest Design Competition – SOFTEC 2019, Second Place winner\nBronze Medal for E-Iqra’ Application in Malaysia Technology Expo (MTE) 2017\nSilver Medal for E-Iqra’ Application in ITEX (2017)\nGold Award for E-Iqra’ Application in Information and Communications Technology Research Competition (ICTReC’17)\nThe Most Innovative Product for E-Iqra’ Application in Information and Communications Technology ResearchCompetition (ICTReC’17)\nSilver Medal for ITEX 2018\n\nConsultancy\n\nImplementation of testing activities on Queue Management System (QMS) for ITMS, UNITEN (Completed)\nDevelopment of MSTH Competency Metric for Software Test Professionals (CMSTP) for MSTB (Completed)\nPrivacy Preservation Technique for Smart Metering Data for TNB Smart Meter (Completed)\nIntelligent Deception Attack Algorithm System for TNB ICT (Completed)\nA Blockchain – Based Platform For Trading Of Smart Meter Data With User – Centric Privacy for TNB ICT (Completed)\nIntelligent Data Selection Algorithm For Privacy Preservation for TNB ICT (Completed)\nA Forensic Investigation Framework For Cyber Attack On Smart Grid for TNB ICT (Completed)\n\n-\n \n              \n        \n        \n        \n        \n                \n\n            \n            \n                            Hits: 2802\n            \n        \n        \n        \n        \n        \n    \n\n\n\n                \n                        \n                \n                \n            \n\n            \n\n                        \n                #footer\\#0 ul{list-style: none; margin-left:-30px; font-size:12px;}\n\n            \n        \n        \n        \n            \n                                                \n                    \n\n    \n        \n            \n            \n            \n                \n                    School of Computer Sciences, Universiti Sains Malaysia, 11800 USM Penang, MalaysiaTel: +604-653 3647 / 2158 / 2155  |  Fax: +604-653 3684  | Email: This email address is being protected from spambots. You need JavaScript enabled to view it.  |  \n\n    \n    \n    \n        Last Modified: Monday 20 July 2026.",
+    "suggestedTags": [
+      "SE",
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "SE",
+        "matchedKeywords": [
+          "software testing"
+        ]
+      },
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "fuzzy"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Shahrinaz Ismail, Dr",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/875-shahrinaz-ismail",
+    "currentResearchCluster": "Service Computing",
+    "suggestedTags": [
+      "SE",
+      "IC",
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "SE",
+        "matchedKeywords": [
+          "software engineering"
+        ]
+      },
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "artificial intelligence",
+          "machine learning",
+          "deep learning",
+          "data mining",
+          "data science"
+        ]
+      },
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "network"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "SITI HAZYANTI BINTI MOHD HASHIM, DR",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/741-siti-hazyanti-binti-mohd-hashim-dr",
+    "currentResearchCluster": "Service Computing",
+    "suggestedTags": [],
+    "matchDetails": [],
+    "needsManualReview": true
+  },
+  {
+    "name": "Sukumar Letchmunan, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/201-sukumar-letchmunan-dr",
+    "currentResearchCluster": "Service Computing",
+    "suggestedTags": [
+      "SE",
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "SE",
+        "matchedKeywords": [
+          "software engineering",
+          "service computing"
+        ]
+      },
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "machine learning"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Suzi Iryanti Fadilah, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/264-suzi-iryanti-fadilah-dr",
+    "currentResearchCluster": "Enabling Technologies & Infrastructures (MeDNA Laboratory)",
+    "suggestedTags": [
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "network"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Syaheerah Lebai Lutfi, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/202-syaheerah-lebai-lutfi-dr",
+    "currentResearchCluster": "Service Computing",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "machine learning",
+          "image processing"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Tan Tien Ping, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/203-tan-tien-ping-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "natural language"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Vaithegy Doraisamy, Ts.Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/773-vaithegy-doraisamy",
+    "currentResearchCluster": null,
+    "suggestedTags": [
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "network",
+          "cyber security",
+          "security",
+          "cloud computing",
+          " iot"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Wan Mohd Nazmee Wan Zainon, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/206-wan-mohd-nazmee-wan-zainon-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [
+      "SE",
+      "IC"
+    ],
+    "matchDetails": [
+      {
+        "tag": "SE",
+        "matchedKeywords": [
+          "software engineering",
+          "software design"
+        ]
+      },
+      {
+        "tag": "IC",
+        "matchedKeywords": [
+          "data mining"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  },
+  {
+    "name": "Wong Li Pei, Associate Professor Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/208-wong-li-pei-dr",
+    "currentResearchCluster": "Data To Knowledge",
+    "suggestedTags": [],
+    "matchDetails": [],
+    "needsManualReview": true
+  },
+  {
+    "name": "ZAINAB AJAB MOHIDEEN, TS. DR.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/834-zainab-ajab-mohideen",
+    "currentResearchCluster": "Service Computing",
+    "suggestedTags": [],
+    "matchDetails": [],
+    "needsManualReview": true
+  },
+  {
+    "name": "Zarul Fitri Zaaba, Dr.",
+    "profileUrl": "https://cs.usm.my/index.php/faculty-member/210-zarul-fitri-zaaba-dr",
+    "currentResearchCluster": "Enabling Technologies & Infrastructures",
+    "suggestedTags": [
+      "CI"
+    ],
+    "matchDetails": [
+      {
+        "tag": "CI",
+        "matchedKeywords": [
+          "security"
+        ]
+      }
+    ],
+    "needsManualReview": false
+  }
+]

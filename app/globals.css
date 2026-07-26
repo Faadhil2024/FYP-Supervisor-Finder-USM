@@ -1,26 +1,693 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500,900&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Monocraft';
+  src: url('https://cdn.jsdelivr.net/gh/IdreesInc/Monocraft@main/dist/Monocraft-ttf/Monocraft.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Cormorant Garamond', serif;
+  background: hsl(0 0% 100%);
+  margin: 0;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem 7rem;   /* was 4rem 2rem 3rem */
+  background: #14161a;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Monocraft', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  color: #14161a;
+  background: #F0F1F3;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #B0B3B8;
+  margin-top: 0.5rem;
+}
+.search-bar {
+  width: 100%;
+  margin: -4rem auto 0;      /* was: margin: 0 auto; */
+  padding: 1.5rem 2rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #14161a;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 700px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid #14161a;
+  border-radius: 6px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #4F8EF7;
+}
+
+.tag-filter {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.tag-button {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1.1rem;
+  border: 2px solid white;
+  border-radius: 6px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.tag-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.tag-button--active {
+  background: white;
+  color: #14161a;
+}
+
+.result-count {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  color: #14161a;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0;
+  padding: 0.35rem 0;
+  background: white;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+  justify-items: center;
+}
+
+article.prof-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+article.prof-card:focus-within {
+  outline: 4px solid hsl(320 100% 80%);
+  outline-offset: 4px;
+}
+
+article.prof-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  scale: calc(1 + (var(--hover) / 5));
+  transition: scale 0.25s ease;
+}
+
+article.prof-card:hover img {
+  --hover: 1;
+}
+
+article.prof-card a.prof-link {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: end;
+  padding: 1.25rem;
+  background: linear-gradient(transparent 45%, black);
+  text-decoration: none;
+  color: white;
+}
+
+.prof-name {
+  position: relative;
+  font-weight: 900;
+  font-size: 1.9rem;
+  line-height: 1.1;
+}
+
+.prof-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 3px;
+  background: white;
+  scale: var(--hover, 0) 1;
+  transform-origin: 0 50%;
+  transition: scale 0.25s ease;
+}
+
+article.prof-card:hover .prof-name::after {
+  --hover: 1;
+}
+
+.prof-tags {
+  margin-top: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ---------- Professor profile page ---------- */
+
+.profile-header {
+  background: #14161a;
+  padding: 1.5rem 2.5rem 2.5rem;
+  position: relative;
+}
+
+.profile-back-link {
+  display: inline-block;
+  font-family: 'Monocraft', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #14161a;
+  background: #F0F1F3;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.profile-back-link:hover {
+  background: #fff;
+}
+
+.profile-header-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.profile-photo-frame {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-photo--placeholder {
+  background: #3a3d44;
+}
+
+.profile-header-info {
+  flex: 1 1 auto;
+  padding-top: 0.25rem;
+}
+
+.profile-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin: 0;
+  color: #fff;
+}
+
+.profile-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #B0B3B8;
+  margin: 0.35rem 0 0;
+}
+
+.profile-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.profile-tag-pill {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 0.25rem 0.7rem;
+  color: #fff;
+}
+
+.detail-block {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.detail-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.25rem 0;
+}
+
+.detail-label {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #888;
+  min-width: 80px;
+}
+
+.detail-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.profile-details {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+}
+
+.profile-section {
+  margin-bottom: 2.5rem;
+}
+
+.profile-section-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 0 0 0.75rem;
+  color: #14161a;
+}
+
+.profile-section-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+.profile-usm-link {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #14161a;
+  text-decoration: underline;
+}
+
+/* ---------- Projects & Publications (append to globals.css) ---------- */
+
+.profile-section-text--muted {
+  color: #999;
+  font-style: italic;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project-card {
+  border-left: 3px solid #14161a;
+  padding-left: 1rem;
+}
+
+.project-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #14161a;
+  margin: 0 0 0.35rem;
+  line-height: 1.4;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.project-role,
+.project-amount,
+.project-dates {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #666;
+  background: #f0f1f3;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.publication-year-group {
+  margin-bottom: 1.5rem;
+}
+
+.publication-year {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #14161a;
+  margin: 0 0 0.5rem;
+}
+
+.publication-citation {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 0.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e0e0e0;
+}
+
+/* ---------- Compare feature (append to globals.css) ---------- */
+
+.compare-toggle {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 5;
+  font-family: 'Monocraft', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(20, 22, 26, 0.55);
+  color: #fff;
+  cursor: pointer;
+}
+
+.compare-toggle--active {
+  background: #fff;
+  color: #14161a;
+  border-color: #fff;
+}
+
+.compare-toggle:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Floating bar */
+.compare-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: #14161a;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.compare-bar-names {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.compare-bar-chip {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.5rem 0.3rem 0.8rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.compare-bar-chip-remove {
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 0.2rem;
+}
+
+.compare-bar-chip-remove:hover {
+  color: #fff;
+}
+
+.compare-bar-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.compare-bar-clear {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.compare-bar-cta {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  background: #fff;
+  color: #14161a;
+  padding: 0.6rem 1.1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Compare page */
+.compare-page {
+  padding: 2rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.profile-back-link--dark {
+  background: #14161a;
+  color: #fff;
+}
+
+.compare-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+
+.compare-empty {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+.compare-table-wrap {
+  overflow-x: auto;
+}
+
+.compare-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 700px;
+}
+
+.compare-table th,
+.compare-table td {
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  text-align: left;
+  vertical-align: top;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+}
+
+.compare-row-label {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #888;
+  background: #fafafa;
+  width: 140px;
+}
+
+.compare-col-header {
+  text-align: center;
+  min-width: 200px;
+}
+
+.compare-photo {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 0 auto 0.5rem;
+  display: block;
+}
+
+.compare-name-link {
+  font-weight: 700;
+  color: #14161a;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.compare-name-link:hover {
+  text-decoration: underline;
+}
+
+.compare-subtitle {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0.25rem 0 0;
+}
+
+.compare-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.compare-list li {
+  margin-bottom: 0.5rem;
+}
+
+.compare-pub-year {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.7rem;
+  color: #888;
+}
+
+/* ---------- Matchmaker (append to globals.css) ---------- */
+
+.matchmaker-box {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  background: #f7f7f8;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+}
+
+.matchmaker-label {
+  display: block;
+  font-family: 'Monocraft', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #14161a;
+  margin-bottom: 0.6rem;
+}
+
+.matchmaker-input {
+  width: 100%;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid #14161a;
+  border-radius: 6px;
+  outline: none;
+}
+
+.matchmaker-input:focus {
+  border-color: #4F8EF7;
+}
+
+.matchmaker-hint {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0.75rem 0 0;
+  font-style: italic;
+}
+
+.match-badge {
+  display: block;
+  font-family: 'Monocraft', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: #14161a;
+  color: #fff;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  margin: 0 auto 0.5rem;
+  width: fit-content;
+}
+
+.match-score {
+  font-family: 'Monocraft', monospace;
+  font-size: 0.7rem;
+  color: #888;
+  margin: 0.25rem 0 0;
 }

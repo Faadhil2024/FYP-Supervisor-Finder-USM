@@ -1,8 +1,9 @@
 // scripts/scrape-lecturers.mjs
 //
-// One-off data collection script for FYP Milestone 2.
+// One-off data collection script for FYP Milestone 2/3.
 // Fetches the USM School of Computer Sciences academic staff directory,
-// then visits each individual profile page and extracts directory fields.
+// then visits each individual profile page and extracts directory fields
+// including a best-guess profile photo URL.
 //
 // Usage: node scripts/scrape-lecturers.mjs
 // Output: docs/data-collection/lecturers.json
@@ -13,7 +14,7 @@ import path from "node:path";
 
 const STAFF_LIST_URL = "https://cs.usm.my/index.php/about/our-people/academic-staff";
 const OUTPUT_PATH = path.join("docs", "data-collection", "lecturers.json");
-const REQUEST_DELAY_MS = 500; // be polite to USM's server
+const REQUEST_DELAY_MS = 500;
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -47,26 +48,44 @@ async function getProfileLinks() {
   return Array.from(links);
 }
 
+// Known site-chrome images to exclude -- logo, admin icon, template assets.
+// Anything matching these patterns is definitely NOT a staff photo.
+const EXCLUDED_IMAGE_PATTERNS = [
+  /templates\/yootheme/i,
+  /icon_admin/i,
+  /usm-white/i,
+  /\/logo/i,
+];
+
+function findPhotoUrl($, baseUrl) {
+  const candidates = [];
+  $("img").each((_, el) => {
+    const src = $(el).attr("src");
+    if (!src) return;
+    if (EXCLUDED_IMAGE_PATTERNS.some((pattern) => pattern.test(src))) return;
+    const absolute = src.startsWith("http") ? src : new URL(src, baseUrl).toString();
+    candidates.push(absolute);
+  });
+
+  if (candidates.length === 0) {
+    return { photoUrl: null, photoNeedsManualCheck: true };
+  }
+  // Heuristic only -- we don't know USM's exact template structure for the
+  // staff photo container, so we take the first non-chrome image and flag
+  // it for a manual spot-check rather than asserting confidence we don't have.
+  return { photoUrl: candidates[0], photoNeedsManualCheck: candidates.length > 1 };
+}
+
 function parseProfile(html, url) {
   const $ = cheerio.load(html);
 
-  // The real email hides in the page's meta author tag, even though the
-  // visible text is spam-obfuscated. BUT: some staff profiles have this
-  // field misconfigured (contains their name instead of an email address).
-  // That's a source-data problem, not something regex can paper over --
-  // we validate the shape and null it out (flagged for manual lookup)
-  // rather than saving garbage as if it were a real email.
   const rawAuthor = $('meta[name="author"]').attr("content")?.trim() || null;
   const looksLikeEmail = !!rawAuthor && /^\S+@\S+\.\S+$/.test(rawAuthor);
   const email = looksLikeEmail ? rawAuthor : null;
 
   const title = $("title").text().trim() || null;
+  const { photoUrl, photoNeedsManualCheck } = findPhotoUrl($, url);
 
-  // The page's flattened text has no separators between elements (e.g. a
-  // room number is immediately followed by "School of Computer Sciences..."
-  // with no space). Rather than depend on a consistent DOM shape across all
-  // 41 profiles (which we already found isn't consistent), we extract each
-  // field as the text found BETWEEN one section label and the next.
   const bodyText = $("body").text();
 
   function getTextBetween(startLabel, endLabels) {
@@ -83,14 +102,19 @@ function parseProfile(html, url) {
     return value.length > 0 ? value : null;
   }
 
+  // Added "Publications" as a stop boundary -- this is the fix for the
+  // Ramona Ramli bug, where Specialization ran into the entire rest of
+  // the page because no earlier boundary label was present.
   const researchCluster = getTextBetween("Research Cluster", ["Research Interest"]);
   const researchInterest = getTextBetween("Research Interest", ["Specialization"]);
-  const specialization = getTextBetween("Specialization", ["Qualifications", "Interests", "Projects"]);
+  const specialization = getTextBetween("Specialization", [
+    "Qualifications",
+    "Interests",
+    "Projects",
+    "Publications",
+    "Teaching",
+  ]);
 
-  // Tel / Fax / Room: capture only plausible characters (digits, +, spaces,
-  // dashes, slashes, or "*" placeholders USM sometimes uses for unlisted
-  // rooms), stopping right before the next known label instead of greedily
-  // eating into it.
   const telMatch = bodyText.match(/Tel\s*:\s*([+\d][\d\s\-/]*\d)(?=\s*Fax|\s*Room|$)/);
   const faxMatch = bodyText.match(/Fax\s*:\s*([+\d][\d\s\-/]*\d)(?=\s*Room|$)/);
   const roomMatch = bodyText.match(/Room\s*:\s*([\d*]+)/);
@@ -100,6 +124,8 @@ function parseProfile(html, url) {
     name: title,
     email,
     emailNeedsManualCheck: !looksLikeEmail,
+    photoUrl,
+    photoNeedsManualCheck,
     tel: telMatch ? telMatch[1].trim() : null,
     fax: faxMatch ? faxMatch[1].trim() : null,
     room: roomMatch ? roomMatch[1].trim() : null,
@@ -134,13 +160,11 @@ async function main() {
   await fs.writeFile(OUTPUT_PATH, JSON.stringify({ results, errors }, null, 2));
 
   const needsManualEmail = results.filter((r) => r.emailNeedsManualCheck).length;
+  const needsManualPhoto = results.filter((r) => r.photoNeedsManualCheck).length;
   console.log(`\nDone. ${results.length} profiles saved to ${OUTPUT_PATH}`);
-  if (errors.length > 0) {
-    console.log(`${errors.length} profiles failed to fetch — check the "errors" array.`);
-  }
-  if (needsManualEmail > 0) {
-    console.log(`${needsManualEmail} profiles have an unverifiable email (flagged emailNeedsManualCheck: true) — look these up manually.`);
-  }
+  if (errors.length > 0) console.log(`${errors.length} profiles failed to fetch.`);
+  if (needsManualEmail > 0) console.log(`${needsManualEmail} profiles need manual email lookup.`);
+  if (needsManualPhoto > 0) console.log(`${needsManualPhoto} profiles need manual photo spot-check (ambiguous or multiple image candidates).`);
 }
 
 main().catch((err) => {

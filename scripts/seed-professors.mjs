@@ -1,15 +1,4 @@
 // scripts/seed-professors.mjs
-//
-// Reads docs/data-collection/lecturers.json (Milestone 2 output) and
-// inserts it into the professors table (Milestone 3 schema).
-//
-// Uses raw SQL via the `postgres` client directly, rather than importing
-// lib/db/schema.ts -- Node can't import a .ts file from a plain .mjs
-// script without an extra TypeScript loader, so this keeps the script
-// dependency-free and simple to run.
-//
-// Usage: node scripts/seed-professors.mjs
-
 import "dotenv/config";
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -17,9 +6,6 @@ import postgres from "postgres";
 
 const LECTURERS_JSON_PATH = path.join("docs", "data-collection", "lecturers.json");
 
-// The scraped "name" field is a combined string like
-// "Aman Jantan, Associate Professor Dr." -- split it into
-// a clean display name and a title.
 function splitNameAndTitle(rawName) {
   if (!rawName) return { name: "Unknown", title: null };
   const [namePart, ...titleParts] = rawName.split(",");
@@ -32,7 +18,7 @@ function splitNameAndTitle(rawName) {
 function slugify(name) {
   return name
     .toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // strip accents
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9\s-]/g, "")
     .trim()
     .replace(/\s+/g, "-");
@@ -62,13 +48,14 @@ async function main() {
     }
     seenSlugs.add(slug);
 
-    // Keys match the actual snake_case DB column names.
     return {
       name,
       title,
       slug,
       email: r.email,
       email_needs_manual_check: !!r.emailNeedsManualCheck,
+      photo_url: r.photoUrl ?? null,
+      photo_needs_manual_check: !!r.photoNeedsManualCheck,
       tel: r.tel,
       fax: r.fax,
       room: r.room,
@@ -79,7 +66,6 @@ async function main() {
     };
   });
 
-  // Wipe and re-insert -- simpler for a one-off dataset refreshed wholesale.
   await sql`delete from professors`;
 
   await sql`
@@ -90,6 +76,8 @@ async function main() {
       "slug",
       "email",
       "email_needs_manual_check",
+      "photo_url",
+      "photo_needs_manual_check",
       "tel",
       "fax",
       "room",
