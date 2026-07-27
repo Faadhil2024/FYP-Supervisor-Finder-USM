@@ -150,23 +150,40 @@ export function ProfileContent({
         </div>
       </div>
 
+      {/* Mobile-only quick nav -- desktop hides this via CSS since
+          scrolling isn't a problem there. Jump-links avoid the "endless
+          scroll" feel on small screens by letting a student go straight
+          to Publications or Projects without hunting. */}
+      <nav className="profile-quick-nav">
+        {professor.researchInterest && (
+          <a href="#research-interest" className="profile-quick-nav-link">Interest</a>
+        )}
+        {professor.specialization && (
+          <a href="#specialization" className="profile-quick-nav-link">Specialization</a>
+        )}
+        <a href="#projects" className="profile-quick-nav-link">Projects</a>
+        {years.length > 0 && (
+          <a href="#publications" className="profile-quick-nav-link">Publications</a>
+        )}
+      </nav>
+
       <div className="profile-details">
         {professor.researchInterest && (
-          <motion.div className="profile-section" {...fadeUp(0.1)}>
+          <motion.div className="profile-section" id="research-interest" {...fadeUp(0.1)}>
             <h2 className="profile-section-heading">Research Interest</h2>
             <p className="profile-section-text">{truncate(professor.researchInterest, MAX_FIELD_LENGTH)}</p>
           </motion.div>
         )}
 
         {professor.specialization && (
-          <motion.div className="profile-section" {...fadeUp(0.16)}>
+          <motion.div className="profile-section" id="specialization" {...fadeUp(0.16)}>
             <h2 className="profile-section-heading">Specialization</h2>
             <p className="profile-section-text">{truncate(professor.specialization, MAX_FIELD_LENGTH)}</p>
           </motion.div>
         )}
 
         {projects.length > 0 ? (
-          <motion.div className="profile-section" {...fadeUp(0.22)}>
+          <motion.div className="profile-section" id="projects" {...fadeUp(0.22)}>
             <h2 className="profile-section-heading">Projects</h2>
             <div className="project-list">
               {projects.map((proj, i) => (
@@ -189,7 +206,7 @@ export function ProfileContent({
             </div>
           </motion.div>
         ) : (
-          <motion.div className="profile-section" {...fadeUp(0.22)}>
+          <motion.div className="profile-section" id="projects" {...fadeUp(0.22)}>
             <h2 className="profile-section-heading">Projects</h2>
             <p className="profile-section-text profile-section-text--muted">
               No projects listed yet.
@@ -198,7 +215,7 @@ export function ProfileContent({
         )}
 
         {years.length > 0 && (
-          <motion.div className="profile-section" {...fadeUp(0.28)}>
+          <motion.div className="profile-section" id="publications" {...fadeUp(0.28)}>
             <h2 className="profile-section-heading">Publications</h2>
             {years.map((year) => (
               <div key={year} className="publication-year-group">

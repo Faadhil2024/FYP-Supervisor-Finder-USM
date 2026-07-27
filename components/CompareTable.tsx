@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import { tokenizeQuery, expandQueryWords } from "@/lib/synonyms";
@@ -71,6 +71,23 @@ export function CompareTable({ professors }: { professors: ProfessorFull[] }) {
 
   const hasQuery = expandedWords.length > 0;
   const topScore = ranked[0]?.score ?? 0;
+
+  // Auto-scroll the mobile card carousel so the current best match is
+  // always what's on screen, regardless of where the user had scrolled
+  // to before typing -- otherwise typing "vision" could leave the best
+  // match sitting off-screen to the left after browsing other cards.
+  const bestCardRef = useRef<HTMLDivElement>(null);
+  const bestMatchId = hasQuery && topScore > 0 ? ranked[0]?.professor.id : null;
+
+  useEffect(() => {
+    if (bestMatchId && bestCardRef.current) {
+      bestCardRef.current.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest",
+      });
+    }
+  }, [bestMatchId]);
 
   return (
     <div>
@@ -242,6 +259,98 @@ export function CompareTable({ professors }: { professors: ProfessorFull[] }) {
             </tr>
           </tbody>
         </table>
+      </div>
+
+      {/* Mobile-only: a wide scrolling table is bad UX on a phone, so
+          this replaces it with swipeable full-detail cards, one
+          professor per screen. CSS scroll-snap handles the "stops
+          cleanly on each card" feel natively -- more reliable than
+          hand-rolled JS drag math for something this important to get
+          right. Hidden on desktop via .compare-mobile-cards CSS. */}
+      <div className="compare-mobile-cards">
+        {ranked.map(({ professor: p, score }, i) => {
+          const isBest = hasQuery && score === topScore && score > 0;
+          return (
+            <motion.div
+              key={p.id}
+              ref={isBest ? bestCardRef : null}
+              className={`compare-mobile-card ${isBest ? "compare-mobile-card--best" : ""}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: i * 0.06 }}
+            >
+              {isBest && <span className="match-badge">★ Best match</span>}
+
+              <img
+                src={
+                  p.photoUrl ??
+                  `https://ui-avatars.com/api/?name=${encodeURIComponent(p.name)}&background=222&color=fff&size=256`
+                }
+                alt={p.name}
+                className="compare-mobile-photo"
+              />
+              <Link href={`/professor/${p.slug}`} className="compare-name-link">
+                {p.name}
+              </Link>
+              {p.title && <p className="compare-subtitle">{p.title}</p>}
+              {hasQuery && (
+                <p className="match-score">
+                  {score > 0 ? `${score} keyword match${score === 1 ? "" : "es"}` : "No overlap found"}
+                </p>
+              )}
+
+              <dl className="compare-mobile-fields">
+                <dt>Tags</dt>
+                <dd>{p.tags.length > 0 ? p.tags.join(", ") : "—"}</dd>
+
+                <dt>Cluster</dt>
+                <dd>{p.researchCluster ?? "—"}</dd>
+
+                <dt>Research Interest</dt>
+                <dd>{p.researchInterest ?? "—"}</dd>
+
+                <dt>Specialization</dt>
+                <dd>{p.specialization ?? "—"}</dd>
+
+                <dt>Recent Projects</dt>
+                <dd>
+                  {p.projects.length > 0 ? (
+                    <ul className="compare-list">
+                      {p.projects.map((proj) => (
+                        <li key={proj.id}>{proj.title}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    "No projects listed"
+                  )}
+                </dd>
+
+                <dt>Recent Publications</dt>
+                <dd>
+                  {p.publications.length > 0 ? (
+                    <ul className="compare-list">
+                      {p.publications.slice(0, 4).map((pub) => (
+                        <li key={pub.id}>
+                          <span className="compare-pub-year">{pub.year}</span> —{" "}
+                          {pub.citation.split(".")[0]}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    "No publications found"
+                  )}
+                </dd>
+
+                <dt>Contact</dt>
+                <dd>
+                  {p.emailNeedsManualCheck ? "not listed" : p.email}
+                  <br />
+                  Room {p.room ?? "—"}
+                </dd>
+              </dl>
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );

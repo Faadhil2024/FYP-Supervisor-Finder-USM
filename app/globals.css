@@ -756,7 +756,52 @@ article.prof-card:hover .prof-name::after {
    photo+info flex row on the profile page, the compare table, and the
    floating compare bar. */
 
+.profile-quick-nav {
+  display: none; /* desktop: no scroll-fatigue problem, nav is unnecessary */
+}
+
+.compare-mobile-cards {
+  display: none; /* desktop uses the table */
+}
+
+
 @media (max-width: 768px) {
+
+  /* Hidden on desktop -- desktop has no scroll-fatigue problem */
+  .profile-quick-nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .profile-quick-nav-link {
+    flex-shrink: 0;
+    font-family: 'Monocraft', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--ink);
+    background: var(--paper-dim);
+    border: 1px solid var(--line);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .profile-quick-nav-link:active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+  }
 
   /* --- Hero section --- */
   .hero-section {
@@ -783,13 +828,34 @@ article.prof-card:hover .prof-name::after {
   /* --- Catalog grid: 3 fixed columns is the single biggest mobile
      problem in the whole site -- collapses to 1 column here --- */
   .catalog-grid {
-    grid-template-columns: 1fr;
-    padding: 2rem 1.25rem 4rem;
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 1rem 4rem;
+    gap: 1.25rem 0.85rem;
   }
 
   article.prof-card {
     max-width: 100%;
+  }
+
+  .compare-toggle {
+    font-size: 0.55rem;
+    padding: 0.25rem 0.45rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .compare-toggle--active {
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: white !important;
+  }
+
+  .prof-name {
+    font-size: 1.3rem;
+  }
+
+  .prof-tags {
+    font-size: 0.7rem;
   }
 
   /* --- Profile page header: photo+info side-by-side flex row
@@ -801,7 +867,11 @@ article.prof-card:hover .prof-name::after {
   .profile-header-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 1.5rem;
+  }
+
+  .profile-header-info {
+    margin-top: 0.25rem;
   }
 
   .profile-photo-frame {
@@ -829,26 +899,85 @@ article.prof-card:hover .prof-name::after {
     justify-content: space-between;
   }
 
-  /* --- Compare table: already has horizontal scroll via
-     .compare-table-wrap, just tighten padding so more fits on
-     screen before scrolling kicks in --- */
-  .compare-table th,
-  .compare-table td {
-    padding: 0.65rem;
-    font-size: 0.9rem;
+  /* --- Compare table: hide the wide table on mobile, show the
+     swipeable card carousel instead --- */
+  .compare-table-wrap {
+    display: none;
   }
 
-  .compare-photo {
-    width: 60px;
-    height: 76px;
+  .compare-mobile-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .compare-mobile-card {
+    flex: 0 0 88%;
+    scroll-snap-align: center;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 1.25rem;
+    position: relative;
+  }
+
+  .compare-mobile-card--best {
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 16px rgba(200, 121, 31, 0.2);
+    padding-top: 2.75rem; /* reserves room for the badge so it doesn't overlap the photo */
+  }
+
+  .compare-mobile-card .match-badge {
+    position: absolute;
+    top: 0.9rem;
+    left: 1.25rem;
+  }
+
+  .compare-mobile-photo {
+    width: 70px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+
+  .compare-mobile-fields {
+    margin: 1rem 0 0;
+  }
+
+  .compare-mobile-fields dt {
+    font-family: 'Monocraft', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    margin-top: 1rem;
+  }
+
+  .compare-mobile-fields dt:first-child {
+    margin-top: 0;
+  }
+
+  .compare-mobile-fields dd {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem;
+    margin: 0.25rem 0 0;
   }
 
   .compare-page {
-    padding: 1.25rem;
+    padding: 1rem 0;
   }
 
   .compare-title {
-    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .matchmaker-box {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   /* --- Matchmaker box --- */
@@ -872,50 +1001,4 @@ article.prof-card:hover .prof-name::after {
     width: 90px;
     height: 115px;
   }
-}
-
-/* ---------- Pass 1: catalog + hero motion redesign (append to globals.css) ---------- */
-
-article.prof-card {
-  transform-style: preserve-3d;
-  will-change: transform;
-}
-
-article.prof-card img {
-  transform-style: preserve-3d;
-}
-
-/* Accent color shows up ONLY here: the sliding active-tag background --
-   this is the "highlighter" moment, everything else stays monochrome */
-.tag-active-bg {
-  position: absolute;
-  inset: 0;
-  background: var(--accent);
-  border-radius: 6px;
-  z-index: 0;
-}
-
-.tag-button {
-  overflow: hidden;
-}
-
-.tag-button--active {
-  background: transparent; /* the sliding pill provides the fill now */
-  color: white;
-  border-color: var(--accent);
-}
-
-/* Search input focus ring uses the accent instead of generic blue */
-.search-input:focus {
-  border-color: var(--accent);
-  outline: 2px solid var(--accent-soft);
-  outline-offset: 2px;
-}
-
-/* Compare toggle active state gets a touch of accent too, so "you've
-   selected this" reads as the same signal color as tag filters */
-.compare-toggle--active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: white;
 }
