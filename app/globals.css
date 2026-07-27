@@ -7,6 +7,28 @@
   font-style: normal;
 }
 
+/* ---------- Design tokens (prepend near top of globals.css) ----------
+   One accent color, used deliberately and rarely -- everything else
+   stays black/white/gray so the accent actually reads as a signal. */
+
+:root {
+  --ink: #14161a;
+  --paper: #ffffff;
+  --paper-dim: #f7f6f3;
+  --line: #e4e2dc;
+  --muted: #8a8783;
+
+  /* Warm amber accent -- deliberately not tech-blue/purple. Reads as
+     "highlighter on a page" rather than "AI product default." */
+  --accent: #c8791f;
+  --accent-soft: #f4e3cd;
+
+  /* Emil Kowalski's strong custom easing curves -- built-in CSS
+     easings are too weak to feel intentional. */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -560,6 +582,13 @@ article.prof-card:hover .prof-name::after {
   border-collapse: collapse;
   width: 100%;
   min-width: 700px;
+  table-layout: fixed;
+}
+
+.compare-col-header,
+.compare-table td:not(.compare-row-label) {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .compare-table th,
@@ -690,4 +719,203 @@ article.prof-card:hover .prof-name::after {
   font-size: 0.7rem;
   color: #888;
   margin: 0.25rem 0 0;
+}
+
+/* ---------- Pass 2: profile page + matchmaker motion (append to globals.css) ---------- */
+
+/* Best-match column gets a subtle accent-colored glow border instead of
+   physically reordering columns (which would desync table rows) */
+.compare-col-header--best {
+  position: relative;
+}
+
+.compare-col-header--best::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 2px solid var(--accent);
+  border-radius: 4px;
+  pointer-events: none;
+  box-shadow: 0 0 16px rgba(200, 121, 31, 0.25);
+}
+
+.match-badge {
+  background: var(--accent);
+}
+
+/* Profile tag pills now pop in with spring, override the static border
+   color to use the accent for consistency with the rest of the site */
+.profile-tag-pill {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------- Mobile responsiveness (append to globals.css) ----------
+   Everything below only applies at narrow widths -- desktop layout is
+   untouched. Covers the riskiest fixed-width/fixed-column patterns
+   introduced across this session: the 3-column catalog grid, the
+   photo+info flex row on the profile page, the compare table, and the
+   floating compare bar. */
+
+@media (max-width: 768px) {
+
+  /* --- Hero section --- */
+  .hero-section {
+    padding: 3rem 1.25rem 8rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .search-bar {
+    padding: 0 1rem;
+  }
+
+  .tag-filter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* --- Catalog grid: 3 fixed columns is the single biggest mobile
+     problem in the whole site -- collapses to 1 column here --- */
+  .catalog-grid {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.25rem 4rem;
+    gap: 2rem;
+  }
+
+  article.prof-card {
+    max-width: 100%;
+  }
+
+  /* --- Profile page header: photo+info side-by-side flex row
+     doesn't have room on narrow screens, stack instead --- */
+  .profile-header {
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+
+  .profile-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .profile-photo-frame {
+    width: 110px;
+    height: 140px;
+  }
+
+  .profile-name {
+    font-size: 1.7rem;
+  }
+
+  .profile-details {
+    padding: 2rem 1.25rem 4rem;
+  }
+
+  /* --- Compare floating bar: name chips + buttons need to stack
+     instead of squeezing into one row --- */
+  .compare-bar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem 1.25rem;
+  }
+
+  .compare-bar-actions {
+    justify-content: space-between;
+  }
+
+  /* --- Compare table: already has horizontal scroll via
+     .compare-table-wrap, just tighten padding so more fits on
+     screen before scrolling kicks in --- */
+  .compare-table th,
+  .compare-table td {
+    padding: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .compare-photo {
+    width: 60px;
+    height: 76px;
+  }
+
+  .compare-page {
+    padding: 1.25rem;
+  }
+
+  .compare-title {
+    font-size: 1.5rem;
+  }
+
+  /* --- Matchmaker box --- */
+  .matchmaker-box {
+    padding: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra-narrow phones: hero title needs another size-down */
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.75rem;
+  }
+
+  .profile-photo-frame {
+    width: 90px;
+    height: 115px;
+  }
+}
+
+/* ---------- Pass 1: catalog + hero motion redesign (append to globals.css) ---------- */
+
+article.prof-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+article.prof-card img {
+  transform-style: preserve-3d;
+}
+
+/* Accent color shows up ONLY here: the sliding active-tag background --
+   this is the "highlighter" moment, everything else stays monochrome */
+.tag-active-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  border-radius: 6px;
+  z-index: 0;
+}
+
+.tag-button {
+  overflow: hidden;
+}
+
+.tag-button--active {
+  background: transparent; /* the sliding pill provides the fill now */
+  color: white;
+  border-color: var(--accent);
+}
+
+/* Search input focus ring uses the accent instead of generic blue */
+.search-input:focus {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 2px;
+}
+
+/* Compare toggle active state gets a touch of accent too, so "you've
+   selected this" reads as the same signal color as tag filters */
+.compare-toggle--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
 }
